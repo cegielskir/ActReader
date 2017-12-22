@@ -1,17 +1,17 @@
 Niech # oznacza konkretny element ustawy
 Linia poleceń:
-Na początku znajduje się ścieżka do pliku
-Następne są argumenty: 
 
--a #    -- wyświetla dany artykuł
--r # 	-- wyświetla dany rozdział
--d # 	-- wyświetla dany dział
--u # 	-- wyświetla dany ustęp
--p # 	-- wyświetla dany punkt
--l #	-- wyświetla daną literę
--za # # -- wyświetla zakres artykułów
--sd # -- wyświetla spis danego działu
--s	-- wyświetla spis treści
+Na początku znajduje się ścieżka do pliku
+Następne są argumenty:
+-a # -- wyświetla dany artykuł
+-r # -- wyświetla dany rozdział
+-d # -- wyświetla dany dział
+-u # -- wyświetla dany ustęp
+-p # -- wyświetla dany punkt
+-l # --wyświetla daną literę
+-za # # --wyświetla zakres artykułów
+-sd # --wyśweitla spis danego działu
+-s --wyświetla spis danej ustawy
 
 UWAGA!!! Żeby wyświetlić niektóre elementy trzeba podać konkretne wcześniejsze argumenty
 np.
