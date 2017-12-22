@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d64b9b7-6aa3-4ea5-a237-703254d41520" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ActReader/Parser.class" afterPath="$PROJECT_DIR$/out/production/ActReader/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ActReader/Show.class" afterPath="$PROJECT_DIR$/out/production/ActReader/Show.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ActReader/Parser.class" afterPath="$PROJECT_DIR$/out/test/ActReader/Parser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Show.java" afterPath="$PROJECT_DIR$/src/Main/Show.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/TypeOfElement.java" afterPath="$PROJECT_DIR$/src/Main/TypeOfElement.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -866,8 +861,16 @@
       <workItem from="1512645707299" duration="63423000" />
       <workItem from="1513348067934" duration="23054000" />
       <workItem from="1513535953831" duration="46042000" />
-      <workItem from="1513854943481" duration="28401000" />
+      <workItem from="1513854943481" duration="28475000" />
     </task>
+    <task id="LOCAL-00001" summary="ActReader Obiektowe">
+      <created>1513983827217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513983827217</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -888,7 +891,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186556000" />
+    <option name="totallyTimeSpent" value="186630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -967,7 +970,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="ActReader Obiektowe" />
+    <option name="LAST_COMMIT_MESSAGE" value="ActReader Obiektowe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
