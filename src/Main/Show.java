@@ -24,6 +24,7 @@ public class Show {
     }
 
     private String argsParser() throws IllegalArgumentException, IndexOutOfBoundsException{
+        if(args[0].equals("-sd")) return sectionContents(args[1]);
         if(args[0].equals("-s")) return sectionContents();
         if(args[0].equals("-za")) return showRangeOfArts();
         else if(args[0].equals("-a")) return showArt();
@@ -65,6 +66,14 @@ public class Show {
             }
         }
         return titles;
+    }
+
+    private String sectionContents(String str) throws IllegalArgumentException{
+        ActElement el = act.listOfMainElements.getElement(str);
+        if( el == null) throw new IllegalArgumentException("Nie ma takiego działu");
+        else{
+            return ((BigActElement)el).getTitles() + chapterContents(el.listOfSubElements.listOfElements);
+        }
     }
 
     private String showRangeOfArts()throws IllegalArgumentException{

@@ -46,24 +46,4 @@ public enum TypeOfElement {
         }
         return " ";
     }
-
-    private boolean startsWith( Character ch) {    //metoda, czy dany pierwszy znak elementu jest zgodny z oczekiwanym
-        if (this.equals(ustęp) | this.equals(punkt)) return Character.isDigit(ch);
-        if (this.equals(litera)) return Character.isAlphabetic(ch);
-        return false;
-    }
-
-    private boolean endsWith( Character ch){ //metoda sprawdza, czy dany ostatni znak elementu jest zgodny z oczekiwanym
-        if(this.equals(ustęp)) return ((int)ch == 46);
-        if(this.equals(punkt) | this.equals(litera)) return((int)ch == 41);
-        return false;
-    }
-
-    public boolean startsAndEndsWith(String word){ // metoda spradza, czy dane slowo zaczyna i konczy sie odpowiednim znakiem
-        if(word.length() == 0) return false;
-        if(this.startsWith(word.charAt(0)) & this.endsWith(word.charAt(word.length()-1))) return true;
-        return false;
-    }
-
-
 }
