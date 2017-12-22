@@ -46,10 +46,10 @@ public class Show {
         return output.toString();
     }
 
-    private String chapterContents(List<ActElement> list){
+    private String chapterContents(List<ActElement> list,String str){
         String titles="";
         for(ActElement el: list) if(!((BigActElement)el).getTitles().equals("")){
-            titles = titles +  "\n     " +((BigActElement)el).getTitles();
+            titles = titles +str + ((BigActElement)el).getTitles() +"\n";
         }
         return titles;
     }
@@ -57,11 +57,11 @@ public class Show {
     private String sectionContents(){
         String titles="";
         if(act.listOfMainElements.listOfElements.get(0).typ.equals(TypeOfElement.Rozdział)) {
-            return chapterContents(act.listOfMainElements.listOfElements);
+            return chapterContents(act.listOfMainElements.listOfElements,"");
         }
         else{
             for(ActElement el : act.listOfMainElements.listOfElements){
-                titles = titles + "\n" +((BigActElement)el).getTitles() + chapterContents(el.listOfSubElements.listOfElements);
+                titles = titles +((BigActElement)el).getTitles()+ "\n"  + chapterContents(el.listOfSubElements.listOfElements,"   ");
                 titles = titles + "\n";
             }
         }
@@ -72,7 +72,7 @@ public class Show {
         ActElement el = act.listOfMainElements.getElement(str);
         if( el == null) throw new IllegalArgumentException("Nie ma takiego działu");
         else{
-            return ((BigActElement)el).getTitles() + chapterContents(el.listOfSubElements.listOfElements);
+            return ((BigActElement)el).getTitles() + chapterContents(el.listOfSubElements.listOfElements,"  \n");
         }
     }
 

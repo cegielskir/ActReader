@@ -18,7 +18,6 @@ public enum TypeOfElement {
         TypeOfElement[] tabOfElements = {dział, Rozdział,artykuł, ustęp, punkt, litera};
             if(Arrays.asList(tabOfElements).indexOf(this) + 1 >= tabOfElements.length) return null;
             return tabOfElements[Arrays.asList(tabOfElements).indexOf(this) + 1];
-
     }
 
     public boolean isBigElement(){

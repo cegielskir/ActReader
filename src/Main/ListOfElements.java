@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class ListOfElements  {
 
-    public List<ActElement> listOfElements;
+    public final List<ActElement> listOfElements;
     private HashMap<String, ActElement> elements = new HashMap<>();
 
     public ListOfElements(List<ActElement> listOfElements) {

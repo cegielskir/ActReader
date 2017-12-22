@@ -9,7 +9,6 @@ public class LittleActElement extends ActElement{
         super(badge,type);
         this.content = content;
         this.listOfSubElements = new ListOfElements(Parser.mainParse(content,type.next(),false));
-
     }
 
     @Override
