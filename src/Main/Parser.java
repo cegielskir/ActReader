@@ -14,6 +14,7 @@ public class Parser {
 
     public static String entryParse(String path, boolean wantEntry) throws IOException {
         String doc = "", content = "";
+        File file = new File(path);
         Scanner scanner = new Scanner(new File(path));
         String newLine = scanner.nextLine();
         while ((scanner.hasNextLine()) & !newLine.startsWith("DZIAŁ") & !newLine.startsWith("Rozdział")) {  //spisywanie wstepu

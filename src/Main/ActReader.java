@@ -3,6 +3,7 @@ import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,7 +30,7 @@ public class ActReader {
 
     public static void main( String[] args) {
         try {
-
+            System.out.println(Arrays.toString(args));
             Show show = new Show(args);
             show.show();
         }

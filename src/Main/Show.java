@@ -12,10 +12,9 @@ public class Show {
 
 
     public Show(String[] args) throws IOException, IllegalArgumentException{
-        String[] argss = args[0].split(" ");
-        this.args = new String[argss.length-1];
-        act = new Act(argss[0]);
-        System.arraycopy(argss,1,this.args,0,argss.length-1);  // tablica argumentow bez lokalizacji dokumentu
+        this.args = new String[args.length-1];
+        act = new Act(args[0]);
+        System.arraycopy(args,1,this.args,0,args.length-1);  // tablica argumentow bez lokalizacji dokumentu
         this.output = argsParser();
     }
 
