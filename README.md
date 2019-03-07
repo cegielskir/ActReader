@@ -4,8 +4,6 @@
 
 Command line application which allows user to find and show specific part of an Act. It can be section, chapter, article, point and letter. It also allows to show table of contents, range of articles, etc. It was developed mainly for two documents: constitution of the Republic of Poland, and Act on competition and consumer protection, so it can not work properly for other documents.    
 
-ese instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 
 ### Usage
 
